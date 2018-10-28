@@ -1,0 +1,33 @@
+/* 
+    vincular html con css
+
+    1. <link>
+        conecta al html con un recurso externo así:
+        <link rel="stylesheet" href="ruta/archivo.css">
+
+    2. <style></style>
+        Permite embeber codigo css dentro del html
+
+    3. @import
+        añade una hoja de estilos externa dentro de otra
+        si se usa dentro de html se debe usar dentro de 
+        la etiqueta <style></style>
+
+        sintaxis:
+        @import url(ruta/file.css);
+
+    4. style=""
+        Permite insertar estilos en un elemento especifico
+        de html.
+
+        sintaxis:
+        <tag styles="estilos..."></tag>
+
+        Ej:
+        <h1 style="color: red">Bla bla</h1>
+
+*/
+
+body{
+    background: purple;
+}

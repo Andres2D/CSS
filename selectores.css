@@ -1,0 +1,123 @@
+/*
+    Los selectores indican a que tipo
+    de elemento html se le va a aplicar el estilo
+/*
+
+/* 
+    1] Selectores de etiqueta o estilos base
+        se aplican a elementos html. basta indicar el nombre
+        de la etiqueta 
+        Metodologia SMACSS -> organizacion de codigo css
+*/
+
+    body{
+        background: white;
+
+    }
+
+    h1{
+        color: black;
+        font-size: 4em;
+    }
+
+
+/*
+    2. selectores de clase
+    las clases son atributos de html que se indica
+    con class="" estas clase son para manipular el 
+    html con CSS o JS
+
+    para selecctiona una clase se utiliza un punto
+    seguido del nombre de la clase.
+
+    EJ:
+    HTML
+    <p class="alerta"> error</p>
+    CSS
+    .alerta{
+        background: red;
+    }
+*/
+
+    .alerta{
+        background: red;
+        color: white;
+    }
+
+
+/* 
+    3] slectores de id
+    se selecciona un id con el simbolo # seguido del 
+    nombre del id. 
+
+    HTML
+    <h1 id="titulo"> LOL <h1>
+
+    CSS #titulo{
+        color: yellow;
+    }
+*/
+
+    #titulo{
+        color: yellow;
+    }
+
+/*
+    1. Los id se usan para manipular el DOM con JS
+    2. Las clases se pueden usar con CSS o JS
+        ej:
+            <ul class="menu js-menu"></ul> -> menu pa CSS
+                                              js-menu pa 
+    3. las clases y los id se pueden unificar
+        .menu.header{
+            se aplica a un elemento que tenga los dos
+            color: greem;
+        }
+*/
+    .menu.header{
+        /*se aplica a un elemento que tenga los dos*/
+        background: green;
+    }
+
+    /*
+    Selectores descendientes
+
+    Se aplican a un elemento siempre que sea hijo de otro
+    sistaxis:
+
+    ancestro descendiente {
+    }
+     No importa el nivel del hijo   
+    */
+
+    ul ul a{
+        color: red;
+    }
+
+/*
+    Anidar selectores
+
+    Consiste en separar selectores por comas, de esta
+    manera los estilos se aplican a todos los selectores
+*/
+
+    h1,p,ul{
+        font-size:  30px;
+    }
+    /* Dont repeat yourself */
+
+
+
+/* Selector de hijo directo:
+
+se Aplica al que es hijo directo del descendiente
+
+sistaxis padre > hijo {
+}
+
+*/
+
+ul > li > a {
+    color: green;
+}
+

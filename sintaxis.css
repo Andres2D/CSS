@@ -1,0 +1,62 @@
+/*
+ Sintaxis de CSS
+
+    1. regla
+        es un bloque de instrucciones css. comienza
+        con un selector y termina con una llave
+        de cierre.
+        así:
+
+        selector {
+            codigo css
+        }
+
+        hay reglas que inician con @, llamadas
+        at-rules
+
+        ej:
+        @media{
+        }
+        @font-face{
+        }
+        @import
+        @kerframes{
+        }
+
+
+    2. selector
+        indican a que elemento html se le va a 
+        aplicar el estilo.
+
+        ej:
+
+        p{
+            estilos que se le aplicaran a los parrafos
+        }
+
+    3. declaracion y bloque de declaracion
+        Es un estilo especifico y se conforma por
+        una propiedad que es el estilo a manipular
+        y un valor que es el valor que tomará
+        ese estilo
+
+        ej:
+        p {
+            color: red; -> color porpiedad y red el valor
+        }
+
+    4. propiedad
+        Se le pueden añadir mas de una propiedad, así:
+        propiedad: valor1,valor2,valor3;
+
+    5. valor
+*/
+
+body {
+    background: black;
+}
+
+h1 {
+    color: white;
+    font-size: 4em;
+}
